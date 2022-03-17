@@ -15,24 +15,24 @@ function greetings2() {
 greetings2();
 
 // Realizar la misma función con template literals.
-function greetings2(name) {
-  const message = "Hello, so long without being able to see you";
-  console.log(message + name);
-}
-greetings2("Daniel");
-greetings2("Diego");
-
 function greetings3(name) {
   const message = "Hello, so long without being able to see you";
-  console.log(`${message} ${name}`);
+  console.log(message + name);
 }
 greetings3("Daniel");
 greetings3("Diego");
 
-// Elegir alguna de las funciones anteriores y pasarla a función expresada y función flecha.
-const greetings4 = function (name) {
+function greetings4(name) {
+  const message = "Hello, so long without being able to see you";
+  console.log(`${message} ${name}`);
+}
+greetings4("Daniel");
+greetings4("Diego");
+
+// Elegir algunanode de las funciones anteriores y pasarla a función expresada y función flecha.
+const greetings5 = function (name) {
   const message = "Hello, so long without being able to see you";
   console.log(`${message} ${name}`);
 };
-greetings4("Daniel");
-greetings4("Diego");
+greetings5("Daniel");
+greetings5("Diego");
