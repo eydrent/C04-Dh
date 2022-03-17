@@ -4,7 +4,7 @@ const get10numsAfter = (num) => {
     console.log(i);
   }
 };
-console.log(get10numsAfter(10));
+get10numsAfter(10);
 
 // 2) Imprimir los números entre el 5 y el 20, saltando de tres en tres.
 const jum3by3 = () => {
@@ -40,10 +40,10 @@ const getFibonacci = (num) => {
   let plus = 1;
   let next;
   for (let i = 0; i <= num; i++) {
-    console.log(prev);
-    next = prev + plus;
-    prev = plus;
-    plus = next;
+    console.log(prev); // 0 - 1 - 1 - 2 - 3 - 5
+    next = prev + plus; // 1 - 2 - 3 - 5 - 8
+    prev = plus; // 1 - 1 - 2 - 3 - 5
+    plus = next; // 1 - 2 - 3 - 5 - 8
   }
 };
 // console.log(getFibonacci(5));
