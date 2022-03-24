@@ -7,7 +7,7 @@ const get10numsAfter = (num) => {
 get10numsAfter(10);
 
 // 2) Imprimir los números entre el 5 y el 20, saltando de tres en tres.
-const jum3by3 = () => {
+const jump3by3 = () => {
   for (let i = 5; i <= 20; i += 3) {
     console.log(i);
   }
