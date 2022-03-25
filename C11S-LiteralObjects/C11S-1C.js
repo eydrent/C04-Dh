@@ -76,7 +76,7 @@ function incrementValue(increment) {
 // }
 
 // create general object
-generalObject = {
+let generalObject = {
   brands: [
     { id: 1, name: "Apple", value: 355_080, incrementValue },
     { id: 2, name: "Amazon", value: 350_273, incrementValue },
@@ -85,10 +85,9 @@ generalObject = {
     { id: 5, name: "Walmart", value: 111_918, incrementValue },
   ],
   getObject(brand) {
-    let object = this.brands.filter((element) => {
+    return this.brands.filter((element) => {
       return element.name === brand;
     });
-    return object;
   },
   incrementBrandsValue(increment) {
     this.brands.forEach((element) => {
