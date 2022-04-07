@@ -12,13 +12,13 @@ console.log(student);
 const futureGrade = (grade) => {
   let status = "";
   if (grade < 4) {
-    let status = "Desaprobado";
+    status = "Desaprobado";
     return `El alumno obtuvo una nota igual a ${grade} por lo tanto su condición es ${status}`;
   } else if (4 <= grade < 7) {
-    let status = "Debe rendir examen final";
+    status = "Debe rendir examen final";
     return `El alumno obtuvo una nota igual a ${grade} por lo tanto su condición es ${status}`;
   } else if (grade >= 7) {
-    let status = "Promocionado";
+    status = "Promocionado";
     return `El alumno obtuvo una nota igual a ${grade} por lo tanto su condición es ${status}`;
   } else {
     return "No se pudo determinar la condición";
